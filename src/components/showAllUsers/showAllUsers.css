@@ -1,0 +1,133 @@
+
+
+.rwd-table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .rwd-table tr:first-child {
+    border-top: none;
+    background: #2daadb;
+    color: rgba(36, 5, 172, 0.829);
+  
+  }
+  
+  .rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f9fc;
+  }
+  
+  .rwd-table tr:nth-child(odd):not(:first-child) {
+    background-color: #ebf3f9;
+  }
+  
+  .rwd-table th {
+    display: none;
+  }
+  
+  .rwd-table td {
+    display: block;
+  }
+  
+  .rwd-table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    color: #000;
+  }
+  
+  .rwd-table th,
+  .rwd-table td {
+    text-align: left;
+  }
+  
+  .rwd-table {
+    color: rgb(21, 59, 24);
+    border-radius: .4em;
+    overflow: hidden;
+  }
+  
+  .rwd-table tr {
+    border-color: #bfbfbf;
+  }
+  
+  .rwd-table th,
+  .rwd-table td {
+    padding: .5em 1em;
+  }
+  @media screen and (max-width: 601px) {
+    .rwd-table tr:nth-child(2) {
+      border-top: none;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .rwd-table tr:hover:not(:first-child) {
+      background-color: #e0e0e0;
+      color: black;
+     
+    }
+    .rwd-table td:before {
+      display: none;
+    }
+    .rwd-table th,
+    .rwd-table td {
+      display: table-cell;
+      padding: .25em .5em;
+    }
+    .rwd-table th:first-child,
+    .rwd-table td:first-child {
+      padding-left: 0;
+    }
+    .rwd-table th:last-child,
+    .rwd-table td:last-child {
+      padding-right: 0;
+    }
+    .rwd-table th,
+    .rwd-table td {
+      padding: 1em !important;
+    }
+  }
+  
+  
+  /* THE END OF THE IMPORTANT STUFF */
+  
+  /* Basic Styling */
+  
+  
+  
+  
+  /* input[type=button] {
+      background: rgb(17, 156, 58);
+      color:white;
+     font-size: 15px;
+  }
+  
+  
+  input[type=button]:hover {
+      color: rgb(17, 156, 58);
+      background:white;
+      cursor: pointer;
+  
+  } */
+  
+  
+  
+  
+  .container {
+    display: block;
+    text-align: center;
+  
+  }
+  
+  
+  
+  .burdocolor {
+      color: rgb(70, 88, 61);
+      font-weight: bold;
+  }
+  
+
+  
