@@ -7,7 +7,7 @@ const ShowAllUsers = () => {
 
     useEffect(() => {
         ( async() =>{
-            await axios.get('http://localhost:5001/api/users').then(res =>{
+            await axios.get('http://localhost:5001/api/users/').then(res =>{
                 setAllUsers(res.data)
             })
         } )()
