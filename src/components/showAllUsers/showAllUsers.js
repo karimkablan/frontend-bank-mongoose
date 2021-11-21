@@ -5,9 +5,12 @@ import './showAllUsers.css';
 const ShowAllUsers = () => {
     const [allUsers, setAllUsers] = useState([])
 
+    // const URL = 'http://localhost:5001/api/users/'
+    const URL = 'https://backend-api-bank-karim.herokuapp.com/api/users/'
+
     useEffect(() => {
         ( async() =>{
-            await axios.get('http://localhost:5001/api/users').then(res =>{
+            await axios.get(URL).then(res =>{
                 setAllUsers(res.data)
             })
         } )()
@@ -15,7 +18,7 @@ const ShowAllUsers = () => {
     }, [])
 
     const deleteHandler = async (id) => {
-        const deleteRes = await axios.delete('http://localhost:5001/api/users/'+ id)
+        const deleteRes = await axios.delete(URL+ id)
         if (deleteRes.status === 200) {
             const stateList = [...allUsers];
             let resultOfNonDeleted = stateList.filter((user) => {
